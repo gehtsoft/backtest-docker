@@ -11,22 +11,19 @@ The image contains a webserver exposing a REST API to use the functionality of B
 #### Add a custom indicator
 POST: /indicator/add
 
-*Example:*
-
+##### Example:
 curl -X POST -F "src=@data/ATR_pips_Indicator.lua" $BACKTESTUTILS_SERVER_URL/indicator/add
 
 #### Delete a custom indicator
 DELETE: /indicator/delete
 
-*Example:*
-
+##### Example:
 curl -X DELETE -H "Content-type: application/json" -d '{"name":"ATR_pips_Indicator.lua"}' $BACKTESTUTILS_SERVER_URL/indicator/delete
 
 #### List  custom indicators
 GET: /indicator/list
 
-*Example:*
-
+##### Example:
 curl -X GET $BACKTESTUTILS_SERVER_URL/indicator/list
 
 ### Strategies
@@ -34,22 +31,19 @@ curl -X GET $BACKTESTUTILS_SERVER_URL/indicator/list
 #### Add a custom strategy
 /strategy/add
 
-*Example:*
-
+##### Example:
 curl -X POST -F "src=@data/MA_Crossover_Strategy.lua" $BACKTESTUTILS_SERVER_URL/strategy/add
 
 #### Delete a custom strategy
 /strategy/delete
 
-*Example:*
-
+##### Example:
 curl -X DELETE -H "Content-type: application/json" -d '{"name":"MA_Crossover_Strategy.lua"}' $BACKTESTUTILS_SERVER_URL/strategy/delete
 
 #### List  custom strategy
 /strategy/list
 
-*Example:*
-
+##### Example:
 curl -X GET $BACKTESTUTILS_SERVER_URL/strategy/list
 
 ### Data files
@@ -57,21 +51,19 @@ curl -X GET $BACKTESTUTILS_SERVER_URL/strategy/list
 #### Add a custom file
 /data/add
 
-*Example:*
-
+##### Example:
 curl -X POST -F "src=@data/test_data.csv" $BACKTESTUTILS_SERVER_URL/data/add
 
 #### Delete a custom file
 /data/delete
 
-*Example:*
+##### Example:
 curl -X DELETE -H "Content-type: application/json" -d '{"name":"test_data.csv"}' $BACKTESTUTILS_SERVER_URL/data/delete
 
 #### List  custom files
 /data/list
 
-*Example:*
-
+##### Example:
 curl -X GET $BACKTESTUTILS_SERVER_URL/data/list
 
 ### Backtester
@@ -79,39 +71,37 @@ curl -X GET $BACKTESTUTILS_SERVER_URL/data/list
 #### Run backtesting
 /bt/run
 
-*Example:*
+##### Example:
 curl -F "name=bt001" -F "src=@data/bt_ma.bpj" $BACKTESTUTILS_SERVER_URL/bt/run
 
 #### Delete backtesting and all related data
 /bt/<bt_id>/delete
 
-*Example:*
-
+##### Example:
 curl -X DELETE $BACKTESTUTILS_SERVER_URL/bt/bt001/delete
 
 #### Get backtesting project file
 /bt/<bt_id>/input
 
-*Example:*
+##### Example:
 curl -X GET $BACKTESTUTILS_SERVER_URL/bt/bt001/input/
 
 #### Get backtesting output
 /bt/<bt_id>/output
 
-*Example:*
+##### Example:
 curl -X GET $BACKTESTUTILS_SERVER_URL/bt/bt001/output/
 
 #### Get backtesting final statistics
 /bt/<bt_id>/stat
 
-*Example:*
-
+##### Example:
 curl -X GET $BACKTESTUTILS_SERVER_URL/bt/bt001/stat/
 
 #### Get backtesting log
 /bt/<bt_id>/log
 
-*Example:*
+##### Example:
 curl -X GET $BACKTESTUTILS_SERVER_URL/bt/bt001/log/
 
 ### Optimizer
@@ -119,34 +109,30 @@ curl -X GET $BACKTESTUTILS_SERVER_URL/bt/bt001/log/
 #### Run optimizer
 /opt/run
 
-*Example:*
-
+##### Example:
 curl -F "name=opt001" -F "src=@data/opt_ma.opj" $BACKTESTUTILS_SERVER_URL/opt/run
 
 #### Delete optimizer run and all related data
 /opt/<opt_id>/delete
 
-*Example:*
-
+##### Example:
 curl -X DELETE $BACKTESTUTILS_SERVER_URL/opt/opt001/delete
 
 #### Get optimizer project file
 /opt/<opt_id>/input
 
-*Example:*
-
+##### Example:
 curl -X GET $BACKTESTUTILS_SERVER_URL/opt/opt001/input/
 
 #### Get optimizer output
 /opt/<opt_id>/output
 
-*Example:*
-
+##### Example:
 curl -X GET $BACKTESTUTILS_SERVER_URL/opt/opt001/output/
 
 #### Get optimizer log
 /opt/<opt_id>/log
 
-*Example:*
-
+##### Example:
 curl -X GET $BACKTESTUTILS_SERVER_URL/opt/opt001/log/
+
