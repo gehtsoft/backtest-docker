@@ -1,6 +1,5 @@
 # Deploy docker image to AWS
 
-## Overview
 There is a step-by-step guide how to deploy the indicore backtester image in AWS. Please pay attention - usage of the mentioned services of Amazon is not free and you would better to know the costs in advance.
 
 1. Login to AWS Console https://console.aws.amazon.com/
