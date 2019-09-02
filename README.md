@@ -5,6 +5,18 @@ This repo contains an info about docker image to run backtesting and trading str
 The docker image is based on centos and openjdk-8 and also contains [Indicore Backtest Utils](http://fxcodebase.com/wiki/index.php/Indicore_Backtest_Utils).
 The image contains a webserver exposing a REST API to use the functionality of Backtest Utils.
 
+## Installation
+The image is available at [Docker Hub](https://hub.docker.com/r/gehtsoft/indicore-backtest).
+To get the image locally:
+*docker pull gehtsoft/indicore-backtest*
+
+The simpliest way to run the container on a local machine is:
+*docker run -p 4000:80 gehtsoft/indicore-backtest*
+
+This command runs the container with http port mapped to local 4000.
+The REST API will be available at:
+*http://<HOST_ADDRESS>:4000*
+
 ## REST API
 ### Indicators
 
