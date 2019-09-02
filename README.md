@@ -7,17 +7,23 @@ The image contains a webserver exposing a REST API to use the functionality of B
 
 ## Installation
 The image is available at [Docker Hub](https://hub.docker.com/r/gehtsoft/indicore-backtest).
+
 To get the image locally:
+
 *docker pull gehtsoft/indicore-backtest*
 
 The simpliest way to run the container on a local machine is:
+
 *docker run -p 4000:80 gehtsoft/indicore-backtest*
 
 This command runs the container with http port mapped to local 4000.
+
 The REST API will be available at:
+
 *http://<HOST_ADDRESS>:4000*
 
 There are options to run the image in public clouds:
+
 [Amazon](https://github.com/gehtsoft/backtest-docker/tree/master/AWS)
 
 [Google](https://github.com/gehtsoft/backtest-docker/tree/master/GoogleCloud)
