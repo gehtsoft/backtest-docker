@@ -17,6 +17,13 @@ This command runs the container with http port mapped to local 4000.
 The REST API will be available at:
 *http://<HOST_ADDRESS>:4000*
 
+There are options to run the image in public clouds:
+[Amazon](https://github.com/gehtsoft/backtest-docker/tree/master/AWS)
+
+[Google](https://github.com/gehtsoft/backtest-docker/tree/master/GoogleCloud)
+
+[Microsoft](https://github.com/gehtsoft/backtest-docker/tree/master/MicrosoftAzure)
+
 ## REST API
 ### Indicators
 
