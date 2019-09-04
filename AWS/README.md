@@ -21,7 +21,7 @@ There is a step-by-step guide how to deploy the indicore backtester image in AWS
 ![TaskName](img/TaskName.JPG)
 10. Set Task memory and Task CPU then press "Add container" button
 ![TaskResources](img/TaskResources.JPG)
-11. Set the container name (could be any name), Image docker.io/gehtsoft/backtestutils and Port mappings 80  
+11. Set the container name (could be any name), Image docker.io/gehtsoft/indicore-backtest and Port mappings 80  
 ![ContainerSettings](img/ContainerSettings.JPG)
 12. Set any other parameters if needed
 13. Press "Add" button  

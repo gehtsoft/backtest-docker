@@ -7,7 +7,7 @@ There is a step-by-step guide how to deploy the indicore backtester image in Mic
 ![NewService](img/NewService.JPG)
 3. Set Subscription, Resource Group (create new if neccessary), Name, Publish - Docker Image, Operating system - Linux, App Service Plan (F1 is enough), then press "Next: Docker" button  
 ![ServiceName](img/ServiceName.JPG)
-4. Choose Image Source - Docker Hub, Image and tag - gehtsoft/backtestutils, then press "Review and create" button  
+4. Choose Image Source - Docker Hub, Image and tag - gehtsoft/indicore-backtest, then press "Review and create" button  
 ![ServiceContainer](img/ServiceContainer.JPG)
 5. Press "Create" button  
 ![CreateService](img/CreateService.JPG)
