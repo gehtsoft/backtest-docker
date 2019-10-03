@@ -2,7 +2,9 @@
 
 ## Overview
 This repo contains an info about docker image to run backtesting and trading strategies optimization.
-The docker image is based on centos and openjdk-8 and also contains [Indicore Backtest Utils](http://fxcodebase.com/wiki/index.php/Indicore_Backtest_Utils).
+
+The docker image is based on Centos-6 and Openjdk-8 and also contains [Indicore Backtest Utils](http://fxcodebase.com/wiki/index.php/Indicore_Backtest_Utils).
+
 The image contains a webserver exposing a REST API to use the functionality of Backtest Utils.
 
 ## Installation
