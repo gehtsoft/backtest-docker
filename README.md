@@ -1,7 +1,11 @@
 # backtest-docker
 
 ## Overview
-This repo contains an info about docker image to run backtesting and trading strategies optimization.
+This is a containerized version of Console Backtester and Optimizer applications.
+
+So, instead of setting up the apps locally, a user can deploy the docker image in some cloud and run backstesting/optimization via REST interface.
+
+The repo contains an info about docker image and REST protocol to run backtesting and trading strategies optimization.
 
 The main docker image is based on Centos-6 and Openjdk-8 and also contains [Indicore Backtest Utils](http://fxcodebase.com/wiki/index.php/Indicore_Backtest_Utils).
 
@@ -11,8 +15,8 @@ Also there is a Windows image with the same functionality to be run under Window
 
 ## Installation
 The images are available at Docker Hub:
-* [Linux] (https://hub.docker.com/r/gehtsoft/indicore-backtest).
-* [Windows] (https://cloud.docker.com/repository/docker/gehtsoft/indicore-backtest-windows)
+* [Linux](https://hub.docker.com/r/gehtsoft/indicore-backtest).
+* [Windows](https://cloud.docker.com/repository/docker/gehtsoft/indicore-backtest-windows)
 
 To get the image locally:
 
