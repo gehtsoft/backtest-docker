@@ -3,12 +3,16 @@
 ## Overview
 This repo contains an info about docker image to run backtesting and trading strategies optimization.
 
-The docker image is based on Centos-6 and Openjdk-8 and also contains [Indicore Backtest Utils](http://fxcodebase.com/wiki/index.php/Indicore_Backtest_Utils).
+The main docker image is based on Centos-6 and Openjdk-8 and also contains [Indicore Backtest Utils](http://fxcodebase.com/wiki/index.php/Indicore_Backtest_Utils).
 
 The image contains a webserver exposing a REST API to use the functionality of Backtest Utils.
 
+Also there is a Windows image with the same functionality to be run under Windows 10 within native mode.
+
 ## Installation
-The image is available at [Docker Hub](https://hub.docker.com/r/gehtsoft/indicore-backtest).
+The images are available at Docker Hub:
+* [Linux] (https://hub.docker.com/r/gehtsoft/indicore-backtest).
+* [Windows] (https://cloud.docker.com/repository/docker/gehtsoft/indicore-backtest-windows)
 
 To get the image locally:
 
