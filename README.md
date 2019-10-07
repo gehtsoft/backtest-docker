@@ -16,7 +16,7 @@ Also there is a Windows image with the same functionality to be run under Window
 ## Installation
 The images are available at Docker Hub:
 * [Linux](https://hub.docker.com/r/gehtsoft/indicore-backtest).
-* [Windows](https://cloud.docker.com/repository/docker/gehtsoft/indicore-backtest-windows)
+* [Windows](https://hub.docker.com/r/gehtsoft/indicore-backtest-windows)
 
 To get the image locally:
 
