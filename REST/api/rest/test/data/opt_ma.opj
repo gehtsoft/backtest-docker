@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+ <simplified-format value="1"/>
+ <strategy value="MA_ADVISOR" />
+ <date-from value="2016/06/01 00:00" />
+ <date-to value="2017/01/01 00:00" />
+ <account-currency value="EUR" />
+ <initial-amount value="50000" />
+ <account-lot-size value="1" />
+ <maintenance-type value="1" />
+ <lifetime value="1" /> 
+ <default-period value="m1"/>
+ <no-slip-mode value="0"/>
+ <can-close value="0"/>
+ <maintenance-type value="2"/>
+ <instruments>
+  <instrument name="EUR/USD">
+   <mmr value="100.0" />
+   <pipSize value="0.0001" />
+   <precision value="5" />
+   <contractCurrency value="EUR" />
+   <profitCurrency value="USD" />
+   <contractMultiplier value="1" />
+   <baseUnitSize value="1" /> 
+   <instrumentType value="1"/>
+  </instrument>  
+ </instruments>
+ <strategy-fixed-params> 
+  <strategy-fixed-param id="FMA_M" value="MVA"/>
+  <strategy-fixed-param id="FMA_N" value="5"/>
+  <strategy-fixed-param id="FMA_S" value="0"/>
+  <strategy-fixed-param id="FMA_P" value="W"/>
+  <strategy-fixed-param id="SMA_M" value="MVA"/> 
+  <strategy-fixed-param id="SMA_N" value="20"/>  
+  <strategy-fixed-param id="SMA_S" value="0"/>
+  <strategy-fixed-param id="SMA_P" value="0"/>
+  <strategy-fixed-param id="TYPE" value="Bid"/>
+  <strategy-fixed-param id="AMOUNT" value="1"/>
+  <strategy-fixed-param id="LIMIT" value="0"/>  
+  <strategy-fixed-param id="STOP" value="0"/>  
+  <strategy-fixed-param id="USE_TRAILING_STOP" value="1"/> 
+  <strategy-fixed-param id="TRAILING_STOP_TYPE" value="Dynamic"/> 
+  <strategy-fixed-param id="FIXED_TRAILING_STOP" value="10"/>  
+  <strategy-fixed-param id="PLAY" value="0"/> 
+  <strategy-fixed-param id="RECURRENTSOUND" value="0"/>
+  <strategy-fixed-param id="SENDEMAIL" value="0"/>
+  <strategy-fixed-param id="TF" value="m1"/>
+  <strategy-fixed-param id="ALLOWEDSIDE" value="Both"/>
+ </strategy-fixed-params>
+ <strategy-optimizable-params>
+  <strategy-opt-param id="FMA_N">
+   <min value="5"/>
+   <max value="7"/>
+   <step value="1"/>
+  </strategy-opt-param>
+  <strategy-opt-param id="SMA_N">
+   <min value="37"/>
+   <max value="41"/>
+   <step value="1"/>
+  </strategy-opt-param>
+ </strategy-optimizable-params>
+</project>

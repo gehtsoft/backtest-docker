@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+   http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location">
+            <value>classpath:rest.properties</value>
+        </property>
+    </bean>
+
+
+
+
+    <bean class="com.fxcm.btutil.common.ProcessFactory" id="run_opt">
+        <property name="path" value="${run_opt_path}"/>
+    </bean>
+
+    <bean class="com.fxcm.btutil.common.ProcessFactory" id="run_bt">
+        <property name="path" value="${run_bt_path}"/>
+    </bean>
+
+    <bean class="com.fxcm.btutil.common.ProcessFactory" id="zip">
+        <property name="path" value="zip"/>
+    </bean>
+
+
+    <bean class="com.fxcm.btutil.LocalBtRunner" id="opt_runner">
+        <property name="processFactory" ref="run_opt"/>
+        <property name="workDir" value="${work_path_opt}"/>
+        <property name="outFile" value="${out_file}"/>
+        <property name="inFile" value="${in_file}"/>
+        <property name="logFile" value="${log_file}"/>
+        <property name="args" >
+            <list>
+                <value>${in_file}</value>
+                <value>"/v"</value>
+                <value>"/o"</value>
+                <value>${out_file}</value>
+                <value>"/d"</value>
+                <value>${log_file}</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean class="com.fxcm.btutil.LocalBtRunner" id="bt_runner">
+        <property name="processFactory" ref="run_bt"/>
+        <property name="zip" ref="zip"/>
+        <property name="workDir" value="${work_path_bt}"/>
+        <property name="outFile" value="${out_file}"/>
+        <property name="inFile" value="${in_file}"/>
+        <property name="logFile" value="${log_file}"/>
+        <property name="statFile" value="${stat_file}"/>
+        <property name="args" >
+            <list>
+                <value>${in_file}</value>
+                <value>"/v"</value>
+                <value>"/o"</value>
+                <value>${out_file}</value>
+                <value>"/d"</value>
+                <value>${log_file}</value>
+                <value>"/so"</value>
+                <value>${stat_file}</value>
+                <value>"/filterEvents"</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean class="com.fxcm.btutil.LocalIndicoreCtrl" id="indicore_ctrl">
+        <property name="indicatorsPath" value="${indi_path}"/>
+        <property name="strategyPath" value="${stg_path}"/>
+    </bean>
+
+    <bean class="com.fxcm.btutil.LocalDataCtrl" id="data_ctrl">
+        <property name="path" value="${data_path}"/>
+    </bean>
+
+
+
+
+
+    <bean id="objectMapper" class="org.codehaus.jackson.map.ObjectMapper"/>
+
+    <context:component-scan base-package="com.fxcm.btutil.rest" />
+
+</beans>

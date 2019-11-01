@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+ <simplified-format value="1"/>
+ <strategy value="MA_ADVISOR" />
+ <date-from value="01/01/2015 00:00" />
+ <date-to value="01/01/2018 00:00" />
+ <account-currency value="EUR" />
+ <initial-amount value="50000" />
+ <default-period value="m1"/>
+ <account-lot-size value="0" />
+ <instruments>
+  <instrument name="EUR/USD">
+   <mmr value="100.0" />
+   <pipSize value="0.0001" />
+   <precision value="5" />
+   <contractCurrency value="EUR" />
+   <profitCurrency value="USD" />
+   <contractMultiplier value="1" />
+   <baseUnitSize value="1" />
+   <instrumentType value="1"/>
+  </instrument>  
+ </instruments>
+ <strategy-params> 
+  <strategy-param id="FMA_M" value="MVA"/>
+  <strategy-param id="FMA_N" value="5"/>
+  <strategy-param id="FMA_S" value="0"/>
+  <strategy-param id="FMA_P" value="W"/>
+  <strategy-param id="SMA_M" value="MVA"/> 
+  <strategy-param id="SMA_N" value="20"/>  
+  <strategy-param id="SMA_S" value="0"/>
+  <strategy-param id="SMA_P" value="0"/>
+  <strategy-param id="TYPE" value="Bid"/>
+  <strategy-param id="AMOUNT" value="1"/>
+  <strategy-param id="LIMIT" value="0"/>  
+  <strategy-param id="STOP" value="0"/>  
+  <strategy-param id="USE_TRAILING_STOP" value="1"/> 
+  <strategy-param id="TRAILING_STOP_TYPE" value="Dynamic"/> 
+  <strategy-param id="FIXED_TRAILING_STOP" value="10"/>  
+  <strategy-param id="PLAY" value="0"/> 
+  <strategy-param id="RECURRENTSOUND" value="0"/>
+  <strategy-param id="SENDEMAIL" value="0"/>
+  <strategy-param id="TF" value="m1"/>
+  <strategy-param id="ALLOWEDSIDE" value="Both"/>
+ </strategy-params>
+</project>
