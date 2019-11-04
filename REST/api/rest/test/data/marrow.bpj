@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+ <version-major value="1" />
+ <version-minor value="0" />
+ <strategy value="MA ARROWS STRATEGY" />
+ <domain-id value="MA ARROWS STRATEGY" />
+ <date-from value="43101.0000000000000000" />
+ <date-to value="43466.9999884259230000" />
+ <account-currency value="USD" />
+ <initial-amount value="50000" />
+ <account-lot-size value="2" />
+ <maintenance-type value="1" />
+ <lifetime value="0" />
+ <autosave value="0" />
+ <default-period value="" />
+ <no-slip-mode value="1" />
+ <open-price-type value="0" />
+ <margin-requirements>
+  <mmr name="EUR/USD" value="2000.0000000000000000" />
+ </margin-requirements>
+ <wizard-steps-passed>
+  <wizard-step name="backtest_advanced" value="1" />
+  <wizard-step name="select_account" value="1" />
+  <wizard-step name="select_commissions" value="1" />
+  <wizard-step name="select_data_range" value="1" />
+  <wizard-step name="select_mmr" value="1" />
+  <wizard-step name="select_strategy" value="1" />
+  <wizard-step name="select_strategy_params" value="1" />
+ </wizard-steps-passed>
+ <instruments-info>
+  <instrument-info name="EUR/USD" value="1;0.0000000000000000;0.0000000000000000;0.0001000000000000;5;0.0200000000000000;EUR;USD;1;1;1.0000000000000000;1.0000000000000000;Default;1;1;0.0000000000000000;0.0000000000000000;" />
+ </instruments-info>
+ <layout>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;frames&gt;&lt;frame frameId=&quot;main&quot; position=&quot;104,104,1304,728,3,2&quot;&gt;&lt;Common CompactMode=&quot;1&quot;&gt;&lt;Summary Panes=&quot;9&quot; TopContainer=&quot;1&quot; Client=&quot;5&quot;/&gt;&lt;Pane-1 Type=&quot;2&quot; DockingCY=&quot;860&quot; Panes=&quot;3&quot; Pane-1=&quot;2&quot; Pane-2=&quot;4&quot; Pane-3=&quot;6&quot;/&gt;&lt;Pane-2 Type=&quot;1&quot; DockingCX=&quot;200&quot; DockingCY=&quot;551&quot; Panes=&quot;1&quot; Selected=&quot;3&quot; Pane-1=&quot;3&quot;/&gt;&lt;Pane-3 Type=&quot;0&quot; DockingCX=&quot;200&quot; DockingCY=&quot;120&quot; Title=&quot;EUR/USD, H1&quot; ID=&quot;20000&quot; IconID=&quot;307&quot; Options=&quot;2&quot; DockingHolder=&quot;2&quot; LastHolder=&quot;2&quot;/&gt;&lt;Pane-4 Type=&quot;2&quot; Horiz=&quot;1&quot; Panes=&quot;1&quot; Pane-1=&quot;5&quot;/&gt;&lt;Pane-5 Type=&quot;4&quot;/&gt;&lt;Pane-6 Type=&quot;1&quot; DockingCX=&quot;200&quot; DockingCY=&quot;305&quot; Panes=&quot;3&quot; Selected=&quot;9&quot; Pane-1=&quot;7&quot; Pane-2=&quot;8&quot; Pane-3=&quot;9&quot;/&gt;&lt;Pane-7 Type=&quot;0&quot; DockingCX=&quot;200&quot; DockingCY=&quot;120&quot; Title=&quot;History&quot; ID=&quot;20002&quot; IconID=&quot;307&quot; Options=&quot;2&quot; DockingHolder=&quot;6&quot; LastHolder=&quot;6&quot;/&gt;&lt;Pane-8 Type=&quot;0&quot; DockingCX=&quot;200&quot; DockingCY=&quot;120&quot; Title=&quot;Statistics&quot; ID=&quot;20001&quot; IconID=&quot;307&quot; Options=&quot;2&quot; DockingHolder=&quot;6&quot; LastHolder=&quot;6&quot;/&gt;&lt;Pane-9 Type=&quot;0&quot; DockingCX=&quot;200&quot; DockingCY=&quot;120&quot; Title=&quot;Log&quot; ID=&quot;20003&quot; IconID=&quot;307&quot; Options=&quot;2&quot; DockingHolder=&quot;6&quot; LastHolder=&quot;6&quot;/&gt;&lt;ActivePane PaneID=&quot;20003&quot;/&gt;&lt;PaneController PaneID=&quot;20000&quot; ControllerType=&quot;Backtester&quot; OrdinalNum=&quot;2147483647&quot;&gt;&lt;node nT=&quot;68&quot; nI=&quot;0&quot; d=&quot;CpsDCgQIABABEAEYASABKAEwAToJCAEQARj9MyACQgBIAFABYAFoAHIAeACCATAKFggAEAAZAAAAAAAAAAAhmpmZmZmZ6T8KFggBEAAZmpmZmZmZ6T8hmJmZmZmZyT+KAaUCCkYIARABGAEiACgBMAA6IAoeCAEQABkAAAAAAAAAACEAAAAAAAAAACgAMAA4AEAAuD6pCPI/EQoAEgAaBAgAEgC4PqkIykIACkYIAhABGAEiACgBMAA6IAoeCAEQABkAAAAAAAAAACEAAAAAAAAAACgAMAA4AEAAuD6qCPI/EQoAEgAaBAgAEgC4PqoI0kIACjAIAxAAGAEiACgBMAA6ALg+qAjyPxsKABIAGgQIABIAuD6oCLJCCgoBQrg+qAjCQgAKMAgEEAAYASIAKAIwADoAuD6oCPI/GwoAEgAaBAgAEgC4PqgIskIKCgFTuD6oCMJCAAovCAUQABgBIgAoATAAOgC4PqcI8j8aCgASABoECAASALg+pwiyQgkKALg+pwi6QgCQAQGYAQCiAQCoAQCwAQC4PqUIqkIAEk4IABAAGAEiB0VVUi9VU0QoADAAOgC4PpcIgj8yCAUQBBktQxzr4jYaP7g+lwi6QR4IABEAAAAAoAvlQBk3uuf/XznlQCAAKgJIMbg+lwg=&quot; MajorVersion=&quot;1&quot; MinorVersion=&quot;1&quot;/&gt;&lt;/PaneController&gt;&lt;PaneController PaneID=&quot;20002&quot; ControllerType=&quot;BacktestStreamsTick&quot; OrdinalNum=&quot;2147483647&quot;/&gt;&lt;PaneController PaneID=&quot;20001&quot; ControllerType=&quot;BacktestStatistics&quot; OrdinalNum=&quot;2147483647&quot;/&gt;&lt;PaneController PaneID=&quot;20003&quot; ControllerType=&quot;BacktestLogTick&quot; OrdinalNum=&quot;2147483647&quot;/&gt;&lt;/Common&gt;&lt;/frame&gt;&lt;/frames&gt;</layout>
+ <test-instrument>EUR/USD</test-instrument>
+ <strategy-params nT="0" nI="0"><n nT="1" nI="0"><v T="7" I="2" d="Type"/><v T="2" I="3" d="4"/><v T="7" I="4" d="Bid"/></n><n nT="1" nI="1"><v T="7" I="2" d="TF"/><v T="2" I="3" d="4"/><v T="7" I="4" d="H1"/></n><n nT="1" nI="2"><v T="7" I="2" d="Period"/><v T="2" I="3" d="2"/><v T="2" I="4" d="10"/></n><n nT="1" nI="3"><v T="7" I="2" d="FastPeriod"/><v T="2" I="3" d="2"/><v T="2" I="4" d="3"/></n><n nT="1" nI="4"><v T="7" I="2" d="FastMethod"/><v T="2" I="3" d="4"/><v T="7" I="4" d="MVA"/></n><n nT="1" nI="5"><v T="7" I="2" d="SlowPeriod"/><v T="2" I="3" d="2"/><v T="2" I="4" d="3"/></n><n nT="1" nI="6"><v T="7" I="2" d="SlowMethod"/><v T="2" I="3" d="4"/><v T="7" I="4" d="MVA"/></n><n nT="1" nI="7"><v T="7" I="2" d="AllowTrade"/><v T="2" I="3" d="1"/><v T="1" I="4" d="true"/></n><n nT="1" nI="8"><v T="7" I="2" d="ExecutionType"/><v T="2" I="3" d="4"/><v T="7" I="4" d="End of Turn"/></n><n nT="1" nI="9"><v T="7" I="2" d="CloseOnOpposite"/><v T="2" I="3" d="1"/><v T="1" I="4" d="true"/></n><n nT="1" nI="10"><v T="7" I="2" d="CustomID"/><v T="2" I="3" d="4"/><v T="7" I="4" d="MAAS"/></n><n nT="1" nI="11"><v T="7" I="2" d="MaxNumberOfPositionInAnyDirection"/><v T="2" I="3" d="2"/><v T="2" I="4" d="2"/></n><n nT="1" nI="12"><v T="7" I="2" d="MaxNumberOfPosition"/><v T="2" I="3" d="2"/><v T="2" I="4" d="1"/></n><n nT="1" nI="13"><v T="7" I="2" d="ALLOWEDSIDE"/><v T="2" I="3" d="4"/><v T="7" I="4" d="Both"/></n><n nT="1" nI="14"><v T="7" I="2" d="Direction"/><v T="2" I="3" d="4"/><v T="7" I="4" d="direct"/></n><n nT="1" nI="15"><v T="7" I="2" d="Account"/><v T="2" I="3" d="4"/><v T="7" I="4" d="TESTACCT"/></n><n nT="1" nI="16"><v T="7" I="2" d="Amount"/><v T="2" I="3" d="2"/><v T="2" I="4" d="1"/></n><n nT="1" nI="17"><v T="7" I="2" d="SetLimit"/><v T="2" I="3" d="1"/><v T="1" I="4" d="false"/></n><n nT="1" nI="18"><v T="7" I="2" d="Limit"/><v T="2" I="3" d="2"/><v T="2" I="4" d="30"/></n><n nT="1" nI="19"><v T="7" I="2" d="SetStop"/><v T="2" I="3" d="1"/><v T="1" I="4" d="false"/></n><n nT="1" nI="20"><v T="7" I="2" d="Stop"/><v T="2" I="3" d="2"/><v T="2" I="4" d="30"/></n><n nT="1" nI="21"><v T="7" I="2" d="TrailingStop"/><v T="2" I="3" d="1"/><v T="1" I="4" d="false"/></n><n nT="1" nI="22"><v T="7" I="2" d="ShowAlert"/><v T="2" I="3" d="1"/><v T="1" I="4" d="true"/></n><n nT="1" nI="23"><v T="7" I="2" d="PlaySound"/><v T="2" I="3" d="1"/><v T="1" I="4" d="false"/></n><n nT="1" nI="24"><v T="7" I="2" d="SoundFile"/><v T="2" I="3" d="7"/><v T="7" I="4" d=""/></n><n nT="1" nI="25"><v T="7" I="2" d="RecurrentSound"/><v T="2" I="3" d="1"/><v T="1" I="4" d="true"/></n><n nT="1" nI="26"><v T="7" I="2" d="SendEmail"/><v T="2" I="3" d="1"/><v T="1" I="4" d="false"/></n><n nT="1" nI="27"><v T="7" I="2" d="Email"/><v T="2" I="3" d="4"/><v T="7" I="4" d=""/></n><n nT="1" nI="28"><v T="7" I="2" d="StartTime"/><v T="2" I="3" d="4"/><v T="7" I="4" d="00:00:00"/></n><n nT="1" nI="29"><v T="7" I="2" d="StopTime"/><v T="2" I="3" d="4"/><v T="7" I="4" d="24:00:00"/></n><n nT="1" nI="30"><v T="7" I="2" d="UseMandatoryClosing"/><v T="2" I="3" d="1"/><v T="1" I="4" d="false"/></n><n nT="1" nI="31"><v T="7" I="2" d="ExitTime"/><v T="2" I="3" d="4"/><v T="7" I="4" d="23:59:00"/></n><n nT="1" nI="32"><v T="7" I="2" d="ValidInterval"/><v T="2" I="3" d="2"/><v T="2" I="4" d="60"/></n></strategy-params>
+ <instruments>
+  <instrument value="EUR/USD" />
+ </instruments>
+ <implicit-instruments>
+ </implicit-instruments>
+</project>
