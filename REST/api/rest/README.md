@@ -11,6 +11,6 @@ System requirements:
 
 Usage:
 
-mvn install
+*mvn install*
 
 Then "target" folder will contain "ROOW.war" file to be deployed within a web server (for example: Tomcat, Jetty).
