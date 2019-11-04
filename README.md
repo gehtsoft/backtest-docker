@@ -15,3 +15,11 @@ Also there is a Windows image with the same functionality to be run under Window
 
 More details on [FXCodebase](http://fxcodebase.com/wiki/index.php/Indicore_Backtest_Docker)
 
+## Do it yourself
+Although we provided a ready-to-go docker image, all the components are also open and the image could be built on yout own.
+The image based on:
+- OpenJDK
+- [Indicore Backtest Utils](http://fxcodebase.com/wiki/index.php/Indicore_Backtest_Utils).
+- [REST service exposing Backtest Utils functionality] (https://github.com/gehtsoft/backtest-docker/tree/master/REST/api/rest)
+
+Dockerfiles and helper scripts are prepared for [Windows](https://github.com/gehtsoft/backtest-docker/tree/master/windows) and [Linux](https://github.com/gehtsoft/backtest-docker/tree/master/linux).
