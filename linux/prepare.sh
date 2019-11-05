@@ -4,7 +4,7 @@ THIS_DIR=`cd -P "$(dirname "$0")" && pwd`
 cd $THIS_DIR
 
 if [ -z "$BACKTEST_DOWNLOAD_URL" ]; then 
-  BACKTEST_DOWNLOAD_URL=http://fxcodebase.com/bin/products/IndicoreSDK/3.4.0/IndicoreBacktestUtils-1.1-Linux-x86_64.tar.gz
+  BACKTEST_DOWNLOAD_URL=http://fxcodebase.com/bin/products/IndicoreSDK/3.5.0/IndicoreBacktestUtils-3.5-Linux-x86_64.tar.gz
 fi
 if [ -z "$BACKTEST_TOMCAT_VERSION" ]; then
   BACKTEST_TOMCAT_VERSION=8.5.42
@@ -39,6 +39,6 @@ if [ "$1" == "build-rest" ]; then
   mvn -e -f $THIS_DIR/../REST/api/rest/pom.xml install || exit 1
   cp $THIS_DIR/../REST/api/rest/target/ROOT.war $THIS_DIR/image/apache-tomcat/webapps || exit 1
 else
-  wget $BACKTEST_REST_DOWNLOAD_URL > $THIS_DIR/image/apache-tomcat/webapps/ROOT.war
+  curl -L $BACKTEST_REST_DOWNLOAD_URL -o $THIS_DIR/image/apache-tomcat/webapps/ROOT.war
 fi
 exit 0

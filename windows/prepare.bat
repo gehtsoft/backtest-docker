@@ -9,7 +9,7 @@ set JAVA_ZIP_FILENAME=java-1.8.0-openjdk-1.8.0.191-1.b12.ojdkbuild.windows.x86_6
 set JAVA_DOWNLOAD_URL=https://github.com/ojdkbuild/ojdkbuild/releases/download/%JAVA_VERSION%/%JAVA_ZIP_FILENAME%.zip
 
 if "%BACKTEST_DOWNLOAD_URL%" == "" (
-  set "BACKTEST_DOWNLOAD_URL=http://fxcodebase.com/bin/products/IndicoreSDK/3.4.0/IndicoreBacktestUtils-1.1-Win64.exe"
+  set "BACKTEST_DOWNLOAD_URL=http://fxcodebase.com/bin/products/IndicoreSDK/3.5.0/IndicoreBacktestUtils-3.5-x64.exe"
 )
 
 if "%BACKTEST_TOMCAT_VERSION%" == "" (
@@ -17,7 +17,7 @@ if "%BACKTEST_TOMCAT_VERSION%" == "" (
 )
 
 if "%BACKTEST_REST_DOWNLOAD_URL%" == "" (
-  set "BACKTEST_REST_DOWNLOAD_URL=https://github.com/adukhovskoy/backtest-docker/raw/master/REST/api/rest/target/ROOT.war"
+  set "BACKTEST_REST_DOWNLOAD_URL=https://github.com/gehtsoft/backtest-docker/raw/master/REST/api/rest/target/ROOT.war"
 )
 
 @REM Prepare openjdk
